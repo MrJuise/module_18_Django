@@ -19,6 +19,7 @@ from django.urls import path
 from task2.views import fun, class_fun
 # from task3.views import home, moto, auto
 from task4.views import home, moto, basket
+from task5.views import sign_up_by_html, sign_up_by_django
 
 # from django.views.generic import TemplateView
 
@@ -30,4 +31,7 @@ urlpatterns = [
     path('', home),
     path('moto/', moto),
     path('basket/', basket),
+    path('reg/', sign_up_by_html),
+    path('r/', sign_up_by_django),
+
 ]
