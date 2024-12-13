@@ -7,11 +7,17 @@ def home(request):
     context = {
         'title': title,
     }
-    return render(request, 'platform.html', context)
+    return render(request, 'third_task/platform.html', context)
 
 def moto(request):
-    return render(request, 'moto.html')
+    moto_catalog = ['Дорожные', 'Спортивные', 'Чоперы', 'Эндуро']
+    title = 'Moto 365'
+    context = {
+        'moto_catalog': moto_catalog,
+        'title': title,
+    }
+    return render(request, 'third_task/moto.html',context)
 
-def auto(request):
-    return render(request, 'auto.html')
+def basket(request):
+    return render(request, 'third_task/basket.html')
 
